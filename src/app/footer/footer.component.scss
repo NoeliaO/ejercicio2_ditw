@@ -1,0 +1,46 @@
+@import "../partials/colors";
+@import "../partials/fonts";
+
+$footer-column-width: 30%;
+$footer-height-desktop: 500px;
+$footer-height-mobile: 1150px;
+
+.footer {
+  background-color: $primary;
+  color: $text-pri-sec;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .footer-column {
+      width: $footer-column-width;
+      padding: 20px;
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 25%;
+      }
+
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-columns {
+      flex-direction: column;
+
+      .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    height: $footer-height-mobile;
+  }
+}

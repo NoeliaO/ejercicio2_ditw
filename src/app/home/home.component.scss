@@ -1,0 +1,27 @@
+@import "../partials/colors";
+@import "../partials/fonts";
+
+.container {
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 3%;
+
+  video {
+    width: 100%;
+  }
+
+  h2 {
+   border-bottom: 1px solid black;
+   padding-bottom: 5px;
+   display: inline-block;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  @media (max-width: 768px) {
+   margin-top: 25%;
+  }
+}
